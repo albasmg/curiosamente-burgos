@@ -5,7 +5,7 @@ import ChapterContainer from '../../containers/Chapter/Chapter'
 const Chapter = () => {
   const { chapterNumber } = useParams()
 
-  return <ChapterContainer />
+  return <ChapterContainer number={Number(chapterNumber)} />
 }
 
 export default Chapter

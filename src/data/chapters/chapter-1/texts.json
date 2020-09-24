@@ -1,0 +1,16 @@
+{
+  "header": {
+    "subtitle": {
+      "firstLine": "Vienen",
+      "secondLine": "curvas"
+    }
+  },
+  "body": {
+    "paragraphs": [
+      "paragraph1 paragraph1 paragraph1",
+      "paragraph2 paragraph2 paragraph2",
+      "paragraph3 paragraph3 paragraph3"
+    ],
+    "quote": "<<Lo que me atrae es ..."
+  }
+}

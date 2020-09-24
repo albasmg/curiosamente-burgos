@@ -1,7 +1,21 @@
 import React from 'react'
+import getHomeData from '../../data/home/getHomeData'
+import HomeView from '../../ui/views/Home/Home'
 
 const Home = () => {
-  return <p>I'm the Home container component</p>
+  const { texts, photo } = getHomeData()
+
+  return (
+    <HomeView
+      author={texts.body.author}
+      header={{
+        title: texts.header.title,
+        subtitle: texts.header.subtitle,
+        photo: photo,
+      }}
+      paragraphs={texts.body.paragraphs}
+    />
+  )
 }
 
 export default Home
