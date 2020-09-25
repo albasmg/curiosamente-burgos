@@ -1,12 +1,12 @@
 import React from 'react'
 import getHomeData from '../../data/home/getHomeData'
-import HomeView from '../../ui/views/Home/Home'
+import HomePage from '../../ui/pages/Home/Home'
 
 const Home = () => {
   const { texts, photo } = getHomeData()
 
   return (
-    <HomeView
+    <HomePage
       author={texts.body.author}
       header={{
         title: texts.header.title,
