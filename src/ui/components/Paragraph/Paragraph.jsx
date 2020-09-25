@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Pharagraph = ({ text }) => {
-  return <p className="paragraph">{text}</p>
+const Pharagraph = ({ children }) => {
+  return <p className="paragraph">{children}</p>
 }
 
 export default Pharagraph

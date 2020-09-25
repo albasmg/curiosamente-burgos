@@ -1,12 +1,12 @@
 import React from 'react'
+import cx from 'classnames'
+import './heading.scss' // TODO: move to the base.scss file
 
-const Heading = ({ level, title, extraClass }) => {
+const Heading = ({ children, extraClass, level }) => {
   const Head = `h${level}`
+  const classes = cx('heading', extraClass)
 
-  // TODO: wait until classnames library is installed
-  // const classes = cx('heading', `heading-${level}`, extraClass)
-
-  return <Head>{title}</Head>
+  return <Head className={classes}>{children}</Head>
 }
 
 export default Heading
