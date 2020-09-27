@@ -1,6 +1,6 @@
 import React from 'react'
-import Heading from '../../components/Heading/Heading'
-import Paragraph from '../../components/Paragraph/Paragraph'
+import Heading from 'ui/components/Heading/Heading'
+import Paragraph from 'ui/components/Paragraph/Paragraph'
 
 const Home = ({ header, paragraphs, author }) => {
   return (

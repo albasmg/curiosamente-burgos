@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Chapter from './pages/Chapter/Chapter'
-import NotFound from './pages/NotFound/NotFound'
+import Home from 'pages/Home/Home'
+import Chapter from 'pages/Chapter/Chapter'
+import NotFound from 'pages/NotFound/NotFound'
 
 const App = () => {
   return (
