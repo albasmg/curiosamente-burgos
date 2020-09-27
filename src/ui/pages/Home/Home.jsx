@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Heading from 'ui/components/Heading/Heading'
 import Paragraph from 'ui/components/Paragraph/Paragraph'
 
-const Home = ({ header, paragraphs, author }) => {
+const Home = ({ author, header, paragraphs }) => {
   return (
     <div className="home">
       <div>
@@ -22,6 +23,21 @@ const Home = ({ header, paragraphs, author }) => {
   )
 }
 
-// TODO: add propTypes and check the Object structure in props
+Home.propTypes = {
+  author: PropTypes.string.isRequired,
+  header: PropTypes.shape({
+    title: PropTypes.shape({
+      firstLine: PropTypes.string.isRequired,
+      secondLine: PropTypes.string.isRequired,
+    }).isRequired,
+    subtitle: PropTypes.shape({
+      firstLine: PropTypes.string.isRequired,
+      secondLine: PropTypes.string.isRequired,
+      thirdLine: PropTypes.string.isRequired,
+    }).isRequired,
+    photo: PropTypes.string.isRequired,
+  }).isRequired,
+  paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
 export default Home
