@@ -5,16 +5,23 @@ import Paragraph from '../../components/Paragraph/Paragraph'
 const Home = ({ header, paragraphs, author }) => {
   return (
     <div className="home">
-      <div>
+      <div className="home-container">
         <Heading level={1} extraClass="home-headerTitle">
           <p>{header.title.firstLine}</p>
           <p>{header.title.secondLine}</p>
         </Heading>
-        <img src={header.photo} alt="photoHome" />
+        <img className="image" src={header.photo} alt="photoHome" />
       </div>
+      <Heading level={2} extraClass="home-headerSubtitle">
+        <p>{header.subtitle.firstLine}</p>
+        <p>{header.subtitle.secondLine}</p>
+        <p>{header.subtitle.thirdLine}</p>
+      </Heading>
       <div>
         {paragraphs.map((paragraph, index) => (
-          <Paragraph key={index}>{paragraph}</Paragraph>
+          <Paragraph extraClass="home-paragraph" key={index}>
+            {paragraph}
+          </Paragraph>
         ))}
       </div>
       <p>{author}</p>
