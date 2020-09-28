@@ -3,30 +3,51 @@
   flex-direction: column;
   position: relative;
   background-color: $primary-color;
-  padding: rem(20);
+  padding-left: rem(35);
+  padding-top: rem(49);
+  padding-bottom: rem(35);
 
-  &-headerTitle {
-    color: $light-color;
-    margin-bottom: rem(150);
-    z-index: 2;
+  &-menu {
+    position: absolute;
+    height: rem(33);
+    width: rem(33);
   }
 
   &-container {
     position: relative;
+    height: 58vh;
+    width: 100%;
+  }
+
+  &-headerTitle {
+    color: $light-color;
+    margin-top: rem(60);
+    z-index: 2;
+  }
+
+  &-imageContainer {
+    border: 2px solid red;
+    height: rem(89);
+    width: rem(89);
+  }
+  &-image {
+    height: rem(359);
+    width: rem(242);
+    position: absolute;
+    right: 0;
+    top: rem(14);
+    z-index: -99;
   }
 
   &-headerSubtitle {
+    width: rem(242);
     color: $dark-color;
-    margin-bottom: rem(30);
+    margin-bottom: rem(31);
     align-self: flex-end;
     z-index: 0;
   }
-}
 
-.image {
-  position: absolute;
-  height: 359px;
-  right: 0;
-  top: 40px;
-  z-index: -99;
+  &-author {
+    font-weight: 700;
+  }
 }

@@ -2,16 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Heading from 'ui/components/Heading/Heading'
 import Paragraph from 'ui/components/Paragraph/Paragraph'
+import menu from 'assets/icons/menu-icon.png'
 
 const Home = ({ author, header, paragraphs }) => {
   return (
     <div className="home">
+      <img src={menu} alt="menu" className="home-menu" />
       <div className="home-container">
         <Heading level={1} extraClass="home-headerTitle">
           <p>{header.title.firstLine}</p>
           <p>{header.title.secondLine}</p>
         </Heading>
-        <img className="image" src={header.photo} alt="photoHome" />
+        <div className="home-imageContainer">
+          <img className="home-image" src={header.photo} alt="photoHome" />
+        </div>
       </div>
       <Heading level={2} extraClass="home-headerSubtitle">
         <p>{header.subtitle.firstLine}</p>
@@ -25,7 +29,7 @@ const Home = ({ author, header, paragraphs }) => {
           </Paragraph>
         ))}
       </div>
-      <p>{author}</p>
+      <p className="home-author">{author}</p>
     </div>
   )
 }
