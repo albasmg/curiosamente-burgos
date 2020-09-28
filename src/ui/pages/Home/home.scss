@@ -7,8 +7,6 @@
 
   &-headerTitle {
     color: $light-color;
-    font-size: $font-large;
-    font-weight: 600;
     margin-bottom: rem(150);
     z-index: 2;
   }
@@ -20,12 +18,8 @@
   &-headerSubtitle {
     color: $dark-color;
     margin-bottom: rem(30);
-    font-weight: lighter;
-    font-size: $font-large;
     align-self: flex-end;
     z-index: 0;
-  }
-  &-paragraph {
   }
 }
 

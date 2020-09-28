@@ -1,2 +1,11 @@
 .heading {
+  &-1 {
+    font-size: $font-large;
+    font-weight: 600;
+  }
+
+  &-2 {
+    font-size: $font-large;
+    font-weight: lighter;
+  }
 }
