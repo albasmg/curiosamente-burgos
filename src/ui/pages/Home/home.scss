@@ -25,18 +25,18 @@
     z-index: 2;
   }
 
-  &-imageContainer {
-    border: 2px solid red;
-    height: rem(89);
-    width: rem(89);
-  }
   &-image {
     height: rem(359);
     width: rem(242);
     position: absolute;
-    right: 0;
     top: rem(14);
+    clip: rect(130px, 170px, 230px, 70px);
+    right: 0;
     z-index: -99;
+
+    &:hover {
+      clip: auto;
+    }
   }
 
   &-headerSubtitle {

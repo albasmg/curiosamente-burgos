@@ -13,9 +13,7 @@ const Home = ({ author, header, paragraphs }) => {
           <p>{header.title.firstLine}</p>
           <p>{header.title.secondLine}</p>
         </Heading>
-        <div className="home-imageContainer">
-          <img className="home-image" src={header.photo} alt="photoHome" />
-        </div>
+        <img className="home-image" src={header.photo} alt="photoHome" />
       </div>
       <Heading level={2} extraClass="home-headerSubtitle">
         <p>{header.subtitle.firstLine}</p>
