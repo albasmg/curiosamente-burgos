@@ -1,6 +1,6 @@
 import React from 'react'
-import getHomeData from '../../data/home/getHomeData'
-import HomePage from '../../ui/pages/Home/Home'
+import getHomeData from 'data/home/getHomeData'
+import HomePage from 'ui/pages/Home/Home'
 
 const Home = () => {
   const { texts, photo } = getHomeData()

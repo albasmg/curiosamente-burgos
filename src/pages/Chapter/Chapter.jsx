@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import getChapterOneData from '../../data/chapters/chapter-1/getChapterOneData'
+import getChapterOneData from 'data/chapters/chapter-1/getChapterOneData'
 
 const CHAPTERS_NAME = {
   ONE: 1,

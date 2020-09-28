@@ -1,5 +1,5 @@
-import texts from './texts.json'
-import photo from '../../assets/images/home.png'
+import texts from 'data/home/texts.json'
+import photo from 'assets/images/home.png'
 
 const getHomeData = () => ({ texts, photo })
 

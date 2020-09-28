@@ -1,11 +1,11 @@
 // GOBALS
 
-@import './assets/stylesheets/variables';
-@import './assets/stylesheets/functions';
-@import './assets/stylesheets/mixins';
-@import './assets/stylesheets/reset';
+@import 'assets/stylesheets/variables';
+@import 'assets/stylesheets/functions';
+@import 'assets/stylesheets/mixins';
+@import 'assets/stylesheets/reset';
 
 // COMPONENTS
 
-@import './ui/pages/Home/home';
-@import './ui/components/Heading/heading';
+@import 'ui/pages/Home/home';
+@import 'ui/components/Heading/heading';
