@@ -22,13 +22,21 @@ const CHAPTERS_INFO = {
 }
 
 const Chapter = () => {
-  const { chapterNumber } = useParams()
-  const number = Number(chapterNumber)
+  const { chapterNumber: chapterNumberText } = useParams()
+  const number = Number(chapterNumberText)
 
   if (!VALID_CHAPTER_NUMBERS.includes(number))
     return 'El número del capítulo no existe. Bla bla bla'
 
-  return <ChapterPage photos={CHAPTERS_INFO[number].photos} />
+  return (
+    <ChapterPage
+      header={CHAPTERS_INFO[number].texts.header}
+      number={chapterNumberText.padStart(2, '0')}
+      quote={CHAPTERS_INFO[number].texts.body.quote}
+      paragraphs={CHAPTERS_INFO[number].texts.body.paragraphs}
+      photos={CHAPTERS_INFO[number].photos}
+    />
+  )
 }
 
 export default Chapter

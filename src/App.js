@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from 'pages/Home/Home'
 import Chapter from 'pages/Chapter/Chapter'
 import NotFound from 'pages/NotFound/NotFound'
-import Navigation from 'ui/components/Navigation/Navigation'
+import Navigation from 'containers/Navigation/Navigation'
 
 const App = () => {
   return (

@@ -18,11 +18,11 @@ const Home = ({ author, header, paragraphs }) => {
         <p>{header.subtitle.secondLine}</p>
         <p>{header.subtitle.thirdLine}</p>
       </Heading>
-      <div>
+      <>
         {paragraphs.map((paragraph, index) => (
           <Paragraph key={index}>{paragraph}</Paragraph>
         ))}
-      </div>
+      </>
       <p className="home-author">{author}</p>
     </div>
   )

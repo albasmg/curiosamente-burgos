@@ -1,0 +1,13 @@
+.chapter {
+  &-header {
+    margin-top: rem(60);
+  }
+
+  &-headerTitle {
+    color: $light-color;
+  }
+
+  &-headerSubtitle {
+    color: $dark-color;
+  }
+}
