@@ -22,9 +22,7 @@ const Home = ({ author, header, paragraphs }) => {
       </Heading>
       <div>
         {paragraphs.map((paragraph, index) => (
-          <Paragraph extraClass="home-paragraph" key={index}>
-            {paragraph}
-          </Paragraph>
+          <Paragraph key={index}>{paragraph}</Paragraph>
         ))}
       </div>
       <p className="home-author">{author}</p>

@@ -30,7 +30,7 @@
     width: rem(242);
     position: absolute;
     top: rem(14);
-    clip: rect(130px, 170px, 230px, 70px);
+    clip: rect(rem(130), rem(170), rem(230), rem(70));
     right: 0;
     z-index: -99;
 
