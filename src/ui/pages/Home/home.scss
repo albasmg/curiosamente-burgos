@@ -1,5 +1,53 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $primary-color;
+  padding-left: rem(35);
+  padding-top: rem(49);
+  padding-bottom: rem(35);
+
+  &-menu {
+    position: absolute;
+    height: rem(33);
+    width: rem(33);
+  }
+
+  &-container {
+    position: relative;
+    height: 58vh;
+    width: 100%;
+  }
+
   &-headerTitle {
-    color: red;
+    color: $light-color;
+    margin-top: rem(60);
+    z-index: 2;
+  }
+
+  &-image {
+    height: rem(359);
+    width: rem(242);
+    position: absolute;
+    top: rem(14);
+    clip: rect(rem(130), rem(170), rem(230), rem(70));
+    right: 0;
+    z-index: -99;
+
+    &:hover {
+      clip: auto;
+    }
+  }
+
+  &-headerSubtitle {
+    width: rem(242);
+    color: $dark-color;
+    margin-bottom: rem(31);
+    align-self: flex-end;
+    z-index: 0;
+  }
+
+  &-author {
+    font-weight: 700;
   }
 }
