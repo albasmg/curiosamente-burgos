@@ -1,4 +1,10 @@
 .carousel {
+  &-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(29);
+  }
+
   &-image {
     height: rem(334);
   }

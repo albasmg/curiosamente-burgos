@@ -21,7 +21,7 @@ const Carousel = ({ photos }) => {
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           {photos.map((photo, index) => (
-            <li className="glide__slide" key={index}>
+            <li className="glide__slide carousel-item" key={index}>
               <img
                 src={photo}
                 alt={`foto_${index}`}

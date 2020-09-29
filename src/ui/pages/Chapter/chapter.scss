@@ -1,13 +1,33 @@
 .chapter {
+  display: flex;
+  flex-direction: column;
+
   &-header {
-    margin-top: rem(60);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: rem(242);
+    margin-top: rem(70);
+    margin-bottom: rem(31);
   }
 
   &-headerTitle {
     color: $light-color;
+    margin-top: 0;
+    margin-bottom: rem(10);
   }
 
   &-headerSubtitle {
     color: $dark-color;
+  }
+
+  &-quote {
+    color: $light-color;
+    font-size: rem(18);
+    font-weight: 500;
+    align-self: flex-end;
+    width: rem(242);
+    margin-top: rem(20);
+    padding-right: rem(19);
   }
 }

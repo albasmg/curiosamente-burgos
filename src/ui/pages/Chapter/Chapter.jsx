@@ -22,7 +22,7 @@ const Chapter = ({ header, number, quote, paragraphs, photos }) => {
           <Paragraph key={index}>{paragraph}</Paragraph>
         ))}
       </>
-      <p>{quote}</p>
+      <p className="chapter-quote">{quote}</p>
     </div>
   )
 }
