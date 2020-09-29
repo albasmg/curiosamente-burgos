@@ -3,10 +3,12 @@ import { Switch, Route } from 'react-router-dom'
 import Home from 'pages/Home/Home'
 import Chapter from 'pages/Chapter/Chapter'
 import NotFound from 'pages/NotFound/NotFound'
+import Navigation from 'ui/components/Navigation/Navigation'
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
+      <Navigation />
       <Switch>
         <Route path="/capitulo/:chapterNumber" exact component={Chapter} />
         <Route path="/" exact component={Home} />

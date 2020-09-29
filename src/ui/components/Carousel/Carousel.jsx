@@ -35,4 +35,6 @@ const Carousel = ({ photos }) => {
   )
 }
 
+//TODO: add proptypes
+
 export default Carousel

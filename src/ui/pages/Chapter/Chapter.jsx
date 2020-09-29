@@ -9,4 +9,6 @@ const Chapter = ({ photos }) => {
   )
 }
 
+//TODO: add proptypes
+
 export default Chapter
