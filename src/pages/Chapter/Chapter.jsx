@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import getChapterOneData from 'data/chapters/chapter-1/getChapterOneData'
+import ChapterPage from 'ui/pages/Chapter/Chapter'
 
 const CHAPTERS_NAME = {
   ONE: 1,
@@ -27,7 +28,7 @@ const Chapter = () => {
   if (!VALID_CHAPTER_NUMBERS.includes(number))
     return 'El número del capítulo no existe. Bla bla bla'
 
-  return <p>I'm the Chapter Page component. Number: {number}</p>
+  return <ChapterPage photos={CHAPTERS_INFO[number].photos} />
 }
 
 export default Chapter
