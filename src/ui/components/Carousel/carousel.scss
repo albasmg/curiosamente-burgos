@@ -1,0 +1,12 @@
+.carousel {
+  &-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(29);
+    padding-right: rem(35);
+  }
+
+  &-image {
+    height: rem(334);
+  }
+}

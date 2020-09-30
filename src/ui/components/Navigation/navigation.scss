@@ -1,0 +1,18 @@
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+
+  &-icon {
+    height: rem(33);
+    width: rem(33);
+  }
+
+  &-title {
+    width: 130px;
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: rem(18);
+  }
+}
