@@ -2,6 +2,7 @@
   "name": "curiosamente-burgos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -19,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docs": "rm -rf docs && react-scripts build && mv build docs"
   },
   "eslintConfig": {
     "extends": "react-app"
