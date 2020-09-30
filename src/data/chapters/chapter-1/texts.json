@@ -12,6 +12,9 @@
       "Aquí, en medio de Castilla, planicie por excelencia, algunos pensaron que no era mala idea empujar las rectas por sus extremos y combarlas, supongo que por el simple placer de hacerlo y por explorar otras vías para hacer de la ciudad un escenario más hermoso. En Burgos, hay algunos ejemplos de esta arquitectura sinuosa, levantada en la primera mitad del siglo pasado, y que, por una vez, no es patrimonio exclusivo de ricos. En muchos casos, rematan edificios modestos que conformaron barrios populares, con casas de cuatro o cinco alturas, en calles salpicadas de acacias por las que es un placer pasear por su escala humana. Por eso y porque la curva nos acerca a las formas de la naturaleza y a su paz.",
       "El arquitecto brasileño Oscar Niemeyer, creador de Brasilia y verdadero artesano de la curva, lo dijo claro: «No es el ángulo recto el que me atrae ni la inflexible y dura línea recta creada por el hombre. Lo que me atrae es la curva sensual y libre, la que encuentro en las montañas de mi país, en el curso de sus ríos, en el cuerpo de la mujer amada. De curvas está hecho todo el universo». Y, curiosamente, Burgos un poco también."
     ],
-    "quote": "«Lo que me atrae es la curva sensual y libre, la que encuentro en las montañas de mi país, en el curso de sus ríos, en el cuerpo de la mujer amada. De curvas está hecho todo el universo». Oscar Niemeyer"
+    "quote": {
+      "firstLine": "«Lo que me atrae es la curva sensual y libre, la que encuentro en las montañas de mi país, en el curso de sus ríos, en el cuerpo de la mujer amada. De curvas está hecho todo el universo».",
+      "secondLine": "Oscar Niemeyer"
+    }
   }
 }

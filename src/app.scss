@@ -1,6 +1,9 @@
 .main {
   background-color: $primary-color;
-  padding-left: rem(35);
-  padding-top: rem(49);
-  padding-bottom: rem(35);
+  padding: rem(49) 0 rem(35) rem(35);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
 }
