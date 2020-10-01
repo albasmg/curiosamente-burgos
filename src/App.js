@@ -4,6 +4,9 @@ import Home from 'pages/Home/Home'
 import Chapter from 'pages/Chapter/Chapter'
 import NotFound from 'pages/NotFound/NotFound'
 import Navigation from 'containers/Navigation/Navigation'
+import { CHAPTERS_NUMBER } from './constants'
+
+const VALID_CHAPTER_NUMBERS = [CHAPTERS_NUMBER.ONE, CHAPTERS_NUMBER.TWO]
 
 const App = () => {
   return (
@@ -11,7 +14,13 @@ const App = () => {
       <Navigation />
       <div className="wrapper">
         <Switch>
-          <Route path="/capitulo/:chapterNumber" exact component={Chapter} />
+          <Route
+            path={`/capitulo/:chapterNumber(${VALID_CHAPTER_NUMBERS.join(
+              '|',
+            )})`}
+            exact
+            component={Chapter}
+          />
           <Route path="/" exact component={Home} />
           <Route component={NotFound} />
         </Switch>
